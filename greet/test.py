@@ -20,3 +20,6 @@ class TestSimpleRoutes(unittest.TestCase):
         response = tester.get('/welcome/back', content_type='html/text')
         self.assertIn(b'welcome back', response.data.lower())
         self.assertEqual(response.status_code, 200)
+
+if __name__ == '__main__': 
+    unittest.main()

@@ -17,5 +17,6 @@ def mult(a, b):
 
 def div(a, b):
     """Divide a by b."""
-
+    if b == 0:
+        return "Error: Division by zero!"
     return a / b
